@@ -116,3 +116,28 @@ A CI/CD tool that automates the software development process, allowing for conti
 - A **User** can leave multiple **Reviews** for different **Properties**.
 - Each **Property** can have multiple **Reviews** from different **Users**.
 - A **Payment** is linked to a single **Booking**.
+
+
+
+## Feature Breakdown
+
+### 1. User Management
+This feature allows users to create accounts, log in, and manage their profiles. It includes functionalities for password recovery and account verification, ensuring a secure and personalized experience.
+
+### 2. Property Management
+Property owners can list their properties by providing details such as title, description, location, and availability. This feature enables owners to manage their listings effectively and attract potential guests.
+
+### 3. Booking System
+The booking system facilitates the reservation of properties by users. It includes a calendar view for availability and allows users to select their desired dates, ensuring a seamless booking experience.
+
+### 4. Review System
+Users can leave reviews and ratings for properties they have stayed in. This feature helps build trust within the community by providing feedback for property owners and aiding future guests in making informed decisions.
+
+### 5. Payment Processing
+This feature handles all financial transactions related to bookings. Users can securely make payments through various methods (e.g., credit card, PayPal), ensuring smooth financial interactions and safeguarding user data.
+
+### 6. Search and Filter
+Users can search for properties based on criteria such as location, price range, and amenities. This feature enhances user experience by allowing them to find listings that meet their specific needs quickly.
+
+### 7. Notifications
+Users receive notifications about booking confirmations, reminders, and messages from property owners. This feature keeps users informed and enhances communication throughout the booking process.
