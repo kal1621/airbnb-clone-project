@@ -141,3 +141,29 @@ Users can search for properties based on criteria such as location, price range,
 
 ### 7. Notifications
 Users receive notifications about booking confirmations, reminders, and messages from property owners. This feature keeps users informed and enhances communication throughout the booking process.
+
+
+
+## API Security
+
+### Key Security Measures
+
+#### 1. Authentication
+Authentication ensures that users are who they claim to be by requiring them to log in using secure credentials (username and password). This is crucial for protecting user accounts and personal information from unauthorized access.
+
+#### 2. Authorization
+Authorization determines what an authenticated user is allowed to do within the application. By implementing role-based access control, we can ensure that users have appropriate permissions, such as restricting property management features to property owners only. This protects sensitive operations and data from being accessed by unauthorized users.
+
+#### 3. Rate Limiting
+Rate limiting controls the number of requests a user can make to the API within a certain timeframe. This measure helps prevent abuse, such as denial-of-service attacks, and ensures that the API remains responsive for all users. It is essential for maintaining application performance and security.
+
+#### 4. Data Encryption
+Data encryption protects sensitive information, such as user passwords and payment details, by converting it into a secure format that cannot be easily read. This is crucial for safeguarding user data during transmission and storage, ensuring compliance with privacy regulations.
+
+#### 5. Input Validation
+Input validation ensures that user inputs are checked for expected formats and types before processing. This measure helps prevent common security vulnerabilities, such as SQL injection and cross-site scripting (XSS), by rejecting harmful data submissions.
+
+### Importance of Security
+- **Protecting User Data**: Personal information, including login credentials and contact details, must be safeguarded to maintain user trust and comply with data protection regulations.
+- **Securing Payments**: Financial transactions require robust security measures to prevent fraud and unauthorized access, ensuring that users can make payments safely.
+- **Maintaining Application Integrity**: Implementing security measures helps protect the application from various attacks, ensuring a reliable and trustworthy experience for users.
