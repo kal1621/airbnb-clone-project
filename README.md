@@ -18,3 +18,22 @@ The Airbnb Clone Project is designed to simulate the development of a robust boo
 - Containerization: Docker
 - Version Control: Git and GitHub
 - CI/CD Tools: GitHub Actions (or similar CI/CD platforms)
+
+
+## Team Roles
+
+### Backend Developer
+Responsible for building and maintaining the server-side logic, ensuring that the application runs efficiently and securely.
+
+
+### Database Administrator
+Manages the database, ensuring data integrity, security, and accessibility. Responsible for designing the database schema and optimizing queries.
+
+### DevOps Engineer
+Handles the deployment and operation of the application, managing CI/CD pipelines and infrastructure to ensure smooth and reliable software delivery.
+
+### QA Engineer
+Tests the application for bugs and issues, ensuring quality and performance standards are met before deployment.
+
+### Project Manager
+Oversees the project development, coordinating between team members, managing timelines, and ensuring that project goals are met.
