@@ -67,3 +67,52 @@ Version control tools used for tracking changes in the codebase. Git allows for 
 
 ### GitHub Actions
 A CI/CD tool that automates the software development process, allowing for continuous integration and deployment. It helps streamline workflows and ensures that code changes are tested and deployed efficiently.
+
+
+
+## Database Design
+
+### Key Entities
+
+#### 1. Users
+- **UserID**: Unique identifier for the user.
+- **Username**: The name chosen by the user for their account.
+- **Email**: User's email address for communication and authentication.
+- **Password**: Hashed password for user authentication.
+- **PhoneNumber**: Contact number for notifications and support.
+
+#### 2. Properties
+- **PropertyID**: Unique identifier for each property.
+- **OwnerID**: References the UserID of the property owner.
+- **Title**: Title of the property listing.
+- **Description**: Detailed description of the property.
+- **Location**: Geographic location of the property.
+
+#### 3. Bookings
+- **BookingID**: Unique identifier for each booking.
+- **PropertyID**: References the PropertyID being booked.
+- **UserID**: References the UserID of the user making the booking.
+- **StartDate**: Date when the booking starts.
+- **EndDate**: Date when the booking ends.
+
+#### 4. Reviews
+- **ReviewID**: Unique identifier for each review.
+- **PropertyID**: References the PropertyID being reviewed.
+- **UserID**: References the UserID of the reviewer.
+- **Rating**: Numerical rating given by the user.
+- **Comment**: Text comment provided by the user about the property.
+
+#### 5. Payments
+- **PaymentID**: Unique identifier for each payment.
+- **BookingID**: References the BookingID for which the payment is made.
+- **Amount**: Total amount charged for the booking.
+- **PaymentDate**: Date when the payment was processed.
+- **PaymentMethod**: Method of payment used (e.g., credit card, PayPal).
+
+### Entity Relationships
+- A **User** can own multiple **Properties**.
+- A **Property** can have multiple **Bookings**.
+- A **Booking** is associated with one **User** and one **Property**.
+- A **User** can leave multiple **Reviews** for different **Properties**.
+- Each **Property** can have multiple **Reviews** from different **Users**.
+- A **Payment** is linked to a single **Booking**.
